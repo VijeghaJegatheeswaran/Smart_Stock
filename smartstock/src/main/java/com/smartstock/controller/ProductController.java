@@ -22,6 +22,9 @@ public class ProductController {
         return service.getAllProducts();
     }
 
+    // Add more mappings like @PostMapping, etc.
+
+
     @GetMapping("/{id}")
     public Product get(@PathVariable Long id) {
         return service.getProductById(id);
